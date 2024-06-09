@@ -75,7 +75,7 @@ a{
     display:flex;
     flex-direction: column;
     justify-content:center;
-    gap:2vw;
+    gap:4.2vw;
 }
 .hero-section-heading{
     font-size:4vw;
@@ -156,6 +156,7 @@ a{
     width:30vw;
     margin-top:-4vw;
     margin-left:5vw;
+    height:30vw;
 }
 @keyframes scaleImage {
     0%{
