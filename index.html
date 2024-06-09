@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="navbar flex">
+                <div class="nav-name flex">
+                    <img src="download.jpeg" alt="" class="namelogo">
+                    <div class="name">man Singh</div>
+                </div>
+                <div class="nav-items flex">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section flex">
+            <div class="faded-text absolute">Aman Singh</div>
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hii! Aman Singh</div>
+                <div class="hero-section-heading hero-section-subheading">
+                    I am <span class="role"></span>
+                </div>
+                <div class="hero-section-description">
+                    I'm Full Stack Web Developer and here is my portfolio website. Here, you'll learn about my journey
+                    as a Full Stack Web Developer.
+                </div>
+                <div class="btn-pink" id="btn">
+Hire Me
+                </div>
+            </div>
+            <div class="hero-section-right">
+                <div class="absolute icons user-img">
+                    <img src="hero-photo.jpg " alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Initialize Typed.js
+        var typeData = new Typed(".role", {
+          strings: [
+            "Full Stack Developer",
+            "Web Developer",
+            "UI-UX Designer",
+            "Backend Developer",
+            "Coder"
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+        </script>
+</body>
+
+</html>

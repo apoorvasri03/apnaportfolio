@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+.container{
+    width:88vw;
+    margin-top:0 auto;
+}
+.flex{
+    display: flex;
+}
+.wrapper{
+    overflow-x:hidden;
+    overflow-y:auto;
+    width:100vw;
+    height:100vh;
+}
+.navbar{
+    justify-content:space-between;
+    align-items:center;
+    padding-top:0.2vw;
+}
+.namelogo{
+    width:10vw;
+}
+.nav-name{
+align-items: center;
+justify-content:baseline;
+margin-left:2vw;
+}
+.nav-items{
+    gap:2.5vw;
+    padding:0 1vw;
+}
+.name{
+    margin-left:-2.2vw;
+    font-size:2.5vw;
+}
+.nav-items div{
+font-size:2vw;
+font-weight:500;
+cursor: pointer;
+}
+.nav-items div a{
+    color: black;
+}
+a{
+    text-decoration:none;
+}
+.nav-items div:hover{
+    font-weight:bold;
+    transition:all 2.5s;
+}
+.hero-section{
+    margin-top:1vw;
+    margin-left:-4vw;
+    position: relative;
+    justify-content:center;
+    gap:1vw;
+    padding-bottom:5vw;
+}
+.faded-text{
+    user-select: none;
+    font-size:5vw;
+    color:rgb(231, 231, 231);
+    bottom:-12%;
+    left:9%;
+    font-weight:bold;
+    transition: all 3s;
+}
+.hero-section-left{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:2vw;
+}
+.hero-section-heading{
+    font-size:4vw;
+    color:#343d68;
+    font-weight:500;
+}
+.role{
+    color:#4e459d;
+}
+.hero-section-subheading{
+    font-size:3.8vw;
+    line-height:4.2vw;
+}
+.hero-section-description{
+    font-size:1.3vw;
+    word-spacing:0.2vw;
+    letter-spacing:0.05vw;
+    margin-top:0vw;
+    width:50%;
+    font-weight:500;
+}
+.btn-pink{
+    background-color:red;
+    width:fit-content;
+    color:white;
+    padding:0.6vw 2vw;
+    box-shadow:0.6vw 0.5vw 1vw 0vw #0000003f;
+    font-size:1.5vw;
+    cursor: pointer;
+    transition:all 0.5s;
+    font-weight:500;
+    border:solid 1vw transparent;
+    position:relative;
+    z-index:1;
+    overflow: hidden;
+}
+.btn-pink::before{
+    content:"";
+    position: absolute;
+    background-color:#fff;
+    top:0;
+    left:-100%;
+    right:0;
+    bottom:0;
+    z-index:-1;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition: all 0.8s;
+   
+}
+.btn-pink:hover::before{
+    transform:scaleX(1);
+    
+}
+.btn-pink:hover{
+    border:solid 1vw red;
+    color: black;
+}
+#btn-bottom{
+    display:none;
+}
+.hero-section-right{
+    position:relative;
+}
+.absolute{
+    position: absolute;
+}
+.user-img{
+    margin-left:-35vw;
+    margin-top:4vw;
+    padding:1vw;
+    filter:grayscale(1);
+    transition:all 1s;
+    animation: scaleImage 5s linear infinite;
+    z-index:-9;
+}
+.user-img img{
+    width:30vw;
+    margin-top:-4vw;
+    margin-left:5vw;
+}
+@keyframes scaleImage {
+    0%{
+filter:grayscale(1);
+transform:scale(1);
+    }
+    50%{
+transform:scale(1.1);
+filter:grayscale(0);
+box-shadow:1vw 1vw 1vw black;
+    }
+    100%{
+transform:scaleX(1);
+filter:grayscale(1);
+    }
+}
